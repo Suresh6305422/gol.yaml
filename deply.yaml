@@ -16,6 +16,8 @@ spec:
         # the Deployment label selector to this value
         app: petclinic
     spec:
+      imagePullSecrets:
+        - name: regcred
       containers:
       - name: petclinic
         # Run this image
