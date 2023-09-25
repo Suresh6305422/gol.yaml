@@ -8,13 +8,13 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: gol
+      app: petclinic
   template:
     metadata:
       labels:
         # Apply this label to pods and default
         # the Deployment label selector to this value
-        app: gol
+        app: petclinic
     spec:
       imagePullSecrets:
         - name: regcred
